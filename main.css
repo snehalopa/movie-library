@@ -2,6 +2,8 @@
     display: flex;
     border: 1px solid black;
     flex-direction: column;
+    width:95%;
+    margin:auto;
 }
 .subcontainer{
     border:1px solid red;
@@ -36,14 +38,24 @@
 
 
 @media screen and (max-width:440px){
-    .subcontainer{
+    .container{
+        width:90%;
+        margin:auto;
+    }
+    .responsive{
         flex-direction: column;
     }
     .button{
         width: 100%;
         margin-top:1%
     }
-    
+    .cards{
+        width:45%;
+        display:flex;
+    }
+    .image{
+        height:200px;
+    }
     
     
 }
