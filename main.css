@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+}
+.subcontainer{
+    border:1px solid red;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.col{
+    border:1px solid green;
+    padding:1% 0%;
+}
+.cards{
+    border:1px solid blue;
+    display: flex;
+    flex-direction: column;
+    margin-top:10%;
+    
+}
+
+.year{
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+  background-color:rgb(43, 90, 165);
+  border: none;
+  color: white;
+  padding: 15px 75px;
+  text-align: center;
+  font-size: 16px;
+}
+
+
+@media screen and (max-width:440px){
+    .subcontainer{
+        flex-direction: column;
+    }
+    .button{
+        width: 100%;
+        margin-top:1%
+    }
+    
+    
+    
+}
