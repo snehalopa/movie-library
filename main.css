@@ -42,20 +42,14 @@
         width:90%;
         margin:auto;
     }
-    .responsive{
+    .subcontainer{
         flex-direction: column;
     }
     .button{
         width: 100%;
         margin-top:1%
     }
-    .cards{
-        width:45%;
-        display:flex;
-    }
-    .image{
-        height:200px;
-    }
+    
     
     
 }
