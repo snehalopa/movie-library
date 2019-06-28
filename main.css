@@ -4,7 +4,7 @@
     width:95%;
     margin:auto;
 }
-.row{
+.subcontainer{
     
     display: flex;
     justify-content: space-between;
@@ -91,6 +91,7 @@ input[type=search] {
   .footer{
       font-size:12px;
   }
+  
   
   
   @media screen and (max-width:440px){
