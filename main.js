@@ -8,7 +8,7 @@ function loadInfo(){
                     movie(responseObject.Search);
                 }
             }
-                    xhttp.open("GET", "http://www.omdbapi.com/?apikey=cdf2dbb2&s=Batman&page=2", true);
+                    xhttp.open("GET", "https://www.omdbapi.com/?apikey=cdf2dbb2&s=Batman&page=2", true);
                     xhttp.send();
 }
 

@@ -6,14 +6,26 @@
         <title>Movies</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="https://kit.fontawesome.com/e8984cc21f.js"></script>
         <script type="text/javascript" src="main.js"></script>
+        
     </head>
-    <body>
+    <body onload="loadInfo()">
         <div class="container">
-
                 <div class="subcontainer">
-                    <a class="logo" href="add.html">Movie Library</a>
+                        <div class="col">
+                                <a class="logo" href="add.html">Movie Library</a>
+                        </div>
+                        <div class="col hamburgerlogo">
+                                <div class="ham"></div>
+                                <div class="ham"></div>
+                                <div class="ham"></div>
+                        </div>
                 </div>
+        </div>
+        <hr>
+                
+        <div class="container">
                 <div class="subcontainer">
                     <div class="col">
                         <button class="button" >My Movie Library</button>
@@ -27,23 +39,36 @@
                         </select>
                     </div>
                 </div>
-                
+        </div>
+
+        <div class="container">        
                 <div class="subcontainer">
-                    <input type="search" placeholder="enter movie name">
-                    <button onclick="loadInfo()">Search</button>
+                        <input type="search" placeholder="Enter movie name">
+                        <button class="search" >Search</button>
                 </div>
+        </div>
+        <hr>
+                
+        <div class="container">
+                <div id="filmsList" class="cardscontainer"></div>
+        </div>
+        <hr>
 
-                <div id="filmsList" class="subcontainer"></div>
-
+        <div class="container">
                 <div class="subcontainer">
                     <div class="col">
-                        <p>privacy</p>
+                        <p>PRIVACY POLICY | TERMS AND CONDITIONS</p>
+                        <P class="footer">2018 © Lorem Ipsum. All rights reserved</P>
                     </div>
                     <div class="col">
-                        <p>social</p>
+                        <p class="footer">Follow us on social</p>
+                        <i class="social fab fa-facebook-square fa-lg"></i>
+                        <i class="social fab fa-twitter-square fa-lg"></i>
+                        <i class="social fab fa-instagram fa-lg"></i>
                     </div>
                 </div>
         </div>
+        
         
     </body>
 </html>

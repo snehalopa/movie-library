@@ -1,6 +1,5 @@
 .container{
     display: flex;
-    
     flex-direction: column;
     width:95%;
     margin:auto;
@@ -11,8 +10,13 @@
     justify-content: space-between;
     flex-wrap:wrap;
 }
+.cardscontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .col{
-    
     padding:1% 0%;
 }
 .cards{
@@ -43,16 +47,53 @@
 }
 
 .image{
-    height:300px;
-    width:300px;
+    height:450px;
+    max-width:300px;
 }
-  
-  
-  
-  
+.ham{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+.filter{
+    background-color: rgb(43, 90, 165);
+    color: white;
+    font-size: 18px;
+    border:none;
+}
 
-
-@media screen and (max-width:440px){
+.search{
+    background-color:rgb(43, 90, 165);
+    border: none;
+    color: white;
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5%;
+}
+input[type=search] {
+    
+    padding: 12px 0px;
+    margin: 8px 0;
+    border-bottom: 2px solid red;
+    border-color: inherit;
+    border:none;
+    
+  }
+  input[placeholder]{
+      font-size: 16px;
+  }
+  .social{
+      color: rgb(43, 90, 165);
+  }
+  .footer{
+      font-size:12px;
+  }
+  
+  
+  @media screen and (max-width:440px){
     .container{
         width:90%;
         margin:auto;
@@ -69,7 +110,26 @@
         height: auto;
         width: auto;
     }
+    .logo{
+        font-size: 24px;
+    }
+    .hamburgerlogo{
     
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top:-10%;
+    }
+    .ham{
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin: 1px 0;
+        margin: 5px 0
+    }
+    .filter{
+        width: 355px;
+    }
     
     
 }
