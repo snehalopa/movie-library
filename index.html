@@ -12,91 +12,35 @@
         <div class="container">
 
                 <div class="subcontainer">
-                    <h1>Movie Library</h1>
+                    <a class="logo" href="add.html">Movie Library</a>
                 </div>
                 <div class="subcontainer">
                     <div class="col">
-                        <button class="button">Add</button>
-                        <button class="button">Search</button>
+                        <button class="button" >My Movie Library</button>
+                        <button class="button" onclick="window.location.href='add.html'">Search and Add New Movies</button>
                     </div>
-                    <div class="col ">
-                        <select>
-                            <option>1</option>
-                            <option>1</option>
-                            <option>1</option>
+                    <div class="col custom-filter">
+                        <select class="filter">
+                            <option>--Filter--</option>
+                            <option>By Title</option>
+                            <option>By Year</option>
                         </select>
                     </div>
                 </div>
                 
                 <div class="subcontainer">
                     <input type="search" placeholder="enter movie name">
+                    <button onclick="loadInfo()">Search</button>
                 </div>
-                <div class="subcontainer">
-                    <div class="cards">
-                            <img class="image" id="poster" src="https://m.media-amazon.com/images/M/MV5BMTdjZTliODYtNWExMi00NjQ1LWIzN2MtN2Q5NTg5NTk3NzliL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"></br>
-                            <div class="year">
-                                <span id="title">Batman</span>
-                                <span id="year" >2001</span>
-                            </div>
-                    </div>
-                    <div class="cards">
-                            <img class="image"id="poster" src="https://m.media-amazon.com/images/M/MV5BMTdjZTliODYtNWExMi00NjQ1LWIzN2MtN2Q5NTg5NTk3NzliL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"></br>
-                            <div class="year">
-                                    <span id="title">Batman</span>
-                                    <span id="year" >2001</span>
-                            </div>
-                    </div>
-                    <div class="cards">
-                            <img class="image" id="poster" src="https://m.media-amazon.com/images/M/MV5BMTdjZTliODYtNWExMi00NjQ1LWIzN2MtN2Q5NTg5NTk3NzliL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"></br>
-                            <div class="year">
-                                    <span id="title">Batman</span>
-                                    <span id="year" >2001</span>
-                            </div>
-                    </div>
-                    <div class="cards">
-                            <img class="image" id="poster" src="https://m.media-amazon.com/images/M/MV5BMTdjZTliODYtNWExMi00NjQ1LWIzN2MtN2Q5NTg5NTk3NzliL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"></br>
-                            <div class="year">
-                                    <span id="title">Batman</span>
-                                    <span id="year" >2001</span>
-                            </div>
-                    </div>
-                    <div class="cards">
-                            <img class="image" id="poster" src="https://m.media-amazon.com/images/M/MV5BMTdjZTliODYtNWExMi00NjQ1LWIzN2MtN2Q5NTg5NTk3NzliL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"></br>
-                            <div class="year">
-                                    <span id="title">Batman</span>
-                                    <span id="year" >2001</span>
-                            </div>
-                    </div>
-                    <div class="cards">
-                            <img class="image" id="poster" src="https://m.media-amazon.com/images/M/MV5BMTdjZTliODYtNWExMi00NjQ1LWIzN2MtN2Q5NTg5NTk3NzliL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"></br>
-                            <div class="year">
-                                    <span id="title">Batman</span>
-                                    <span id="year" >2001</span>
-                            </div>
-                    </div>
-                    <div class="cards">
-                            <img class="image" id="poster" src="https://m.media-amazon.com/images/M/MV5BMTdjZTliODYtNWExMi00NjQ1LWIzN2MtN2Q5NTg5NTk3NzliL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"></br>
-                            <div class="year">
-                                    <span id="title">Batman</span>
-                                    <span id="year" >2001</span>
-                            </div>
-                    </div>
-                    <div class="cards">
-                            <img class="image" id="poster" src="https://m.media-amazon.com/images/M/MV5BMTdjZTliODYtNWExMi00NjQ1LWIzN2MtN2Q5NTg5NTk3NzliL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"></br>
-                            <div class="year">
-                                    <span id="title">Batman</span>
-                                    <span id="year" >2001</span>
-                            </div>
-                    </div>
-                    
-                        
-                </div>
+
+                <div id="filmsList" class="subcontainer"></div>
+
                 <div class="subcontainer">
                     <div class="col">
                         <p>privacy</p>
                     </div>
                     <div class="col">
-                            <p>social</p>
+                        <p>social</p>
                     </div>
                 </div>
         </div>

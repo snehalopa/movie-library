@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    
+}
+.subcontainer{
+    
+}
+.movieform{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+   width: 80%;
+   margin:auto;
+   height: 350px;
+   padding:10%;
+}
+.button{
+    background-color:rgb(43, 90, 165);
+    border: none;
+    color: white;
+    padding: 15px 75px;
+    text-align: center;
+    font-size: 16px;
+  }
+  .header{
+    color: black;
+    font-size:30px;
+    text-decoration: none;
+    font-weight: bolder;
+    cursor: pointer;
+}

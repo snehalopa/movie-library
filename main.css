@@ -16,11 +16,9 @@
     padding:1% 0%;
 }
 .cards{
-    
     display: flex;
     flex-direction: column;
     margin-top:10%;
-    
 }
 
 .year{
@@ -34,7 +32,24 @@
   padding: 15px 75px;
   text-align: center;
   font-size: 16px;
+  cursor: pointer;
 }
+.logo{
+    color: black;
+    font-size:30px;
+    text-decoration: none;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.image{
+    height:300px;
+    width:300px;
+}
+  
+  
+  
+  
 
 
 @media screen and (max-width:440px){
@@ -47,7 +62,12 @@
     }
     .button{
         width: 100%;
-        margin-top:1%
+        margin-top:1%;
+        font-size:14px;
+    }
+    .image{
+        height: auto;
+        width: auto;
     }
     
     
